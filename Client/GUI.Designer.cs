@@ -1,4 +1,4 @@
-﻿namespace MyPhotos
+﻿namespace Interface
 {
     partial class GUI
     {
@@ -41,6 +41,7 @@
             this.InsertButton = new System.Windows.Forms.Button();
             this.NameLabel = new System.Windows.Forms.Label();
             this.NameString = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SearchButton
@@ -162,11 +163,22 @@
             this.NameString.TabIndex = 12;
             this.NameString.TextChanged += new System.EventHandler(this.NameString_TextChanged);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(198, 104);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(77, 24);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Search";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.NameString);
             this.Controls.Add(this.NameLabel);
             this.Controls.Add(this.InsertButton);
@@ -202,5 +214,6 @@
         private System.Windows.Forms.Button InsertButton;
         private System.Windows.Forms.Label NameLabel;
         private System.Windows.Forms.TextBox NameString;
+        private System.Windows.Forms.Button button1;
     }
 }
